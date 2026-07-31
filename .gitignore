@@ -1,0 +1,18 @@
+# Environment variables
+.env
+
+# Virtual environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDEs
+.vscode/
+.idea/
+
+# MLflow
+mlruns/
