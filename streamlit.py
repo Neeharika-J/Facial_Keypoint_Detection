@@ -24,25 +24,7 @@ st.set_page_config(
 def load_resources():
     load_dotenv()
 
-    # Load model from MLflow
-    # ENTER YOUR MLflow TRACKING URI HERE OR DOWNLOAD MODEL FROM model.onnx FILE
-    mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
-    model_uri = os.environ["MODEL_URI"]  # models:/[model_name]/[model_version]
-    model = mlflow.pytorch.load_model(model_uri)
-    model.eval()
-    # Export only once
-    if not os.path.exists("model.onnx"):
-        dummy = torch.randn(1, 3, 96, 96) #dummy input for the model
-        torch.onnx.export(
-            model,
-            dummy,
-            "model.onnx",
-            opset_version=17,
-            dynamo=False,
-        )
-    print("Model loaded successfully from MLflow and exported to ONNX.")
-
-
+    
     # ONNX Inference session
     session = ort.InferenceSession(
         "model.onnx",
