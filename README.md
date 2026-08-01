@@ -26,6 +26,12 @@ The model was trained on the **Kaggle Facial Keypoints Detection** dataset.
 
 ---
 
+## 🔗 Other links
+
+**Read the complete blog here:** *(Add your Medium article link.)*
+**See the streamlit version here:** *(https://facialkeypointdetection-3ktroyrkokkmjyirbllqgx.streamlit.app/)*
+
+
 ## 📁 Project Structure
 
 ```text
@@ -63,7 +69,7 @@ The model was trained on the **Kaggle Facial Keypoints Detection** dataset.
 
 ### ⚠️ Streamlit Performance
 
-The Streamlit application introduces additional latency because every frame passes through the following pipeline:
+📝 Note: The performance of the Streamlit application depends on the execution environment. During development, the local Streamlit version exhibited higher latency due to WebRTC overhead. However, the deployed Streamlit Cloud application performed noticeably smoother in our testing. The Streamlit application introduces additional latency because every frame passes through the following pipeline:
 
 ```text
 📷 Browser Camera
@@ -91,7 +97,6 @@ Several optimizations were implemented to reduce latency:
 * ✅ Reduced webcam resolution
 * ✅ Adjusted camera frame rate
 * ✅ Enabled asynchronous video processing (`async_processing=True`)
-* ✅ Optimized ONNX Runtime inference pipeline
 
 Although these improvements reduced lag, the native OpenCV application continues to provide the smoothest real-time experience.
 
@@ -125,9 +130,6 @@ The Medium article covers:
 * 📊 Experiment tracking with MLflow & DagsHub
 * ⚡ ONNX model export
 * 🎥 Real-time deployment with OpenCV & Streamlit
-
-🔗 **Read the complete blog here:** *(Add your Medium article link.)*
-
 ---
 
 ⭐ If you found this project helpful, consider giving the repository a **Star** on GitHub!
