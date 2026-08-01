@@ -26,6 +26,12 @@ The model was trained on the **Kaggle Facial Keypoints Detection** dataset.
 
 ---
 
+## 🔗 Other links
+
+**Read the complete blog here:** *(Add your Medium article link.)*
+** See the streamlit version here:** *()*
+
+
 ## 📁 Project Structure
 
 ```text
@@ -125,9 +131,6 @@ The Medium article covers:
 * 📊 Experiment tracking with MLflow & DagsHub
 * ⚡ ONNX model export
 * 🎥 Real-time deployment with OpenCV & Streamlit
-
-🔗 **Read the complete blog here:** *(Add your Medium article link.)*
-
 ---
 
 ⭐ If you found this project helpful, consider giving the repository a **Star** on GitHub!
