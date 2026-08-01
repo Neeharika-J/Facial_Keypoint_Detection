@@ -28,9 +28,9 @@ The model was trained on the **Kaggle Facial Keypoints Detection** dataset.
 
 ## 🔗 Other links
 
-**Read the complete blog here:** *(Add your Medium article link.)*
-**See the streamlit version here:** *(https://facialkeypointdetection-3ktroyrkokkmjyirbllqgx.streamlit.app/)*
+**Read the complete blog here:** *[Link](https://medium.com/@neeharikajugran/detecting-facial-keypoints-in-real-time-using-cnns-and-opencv-9dcfa9d690e0?postPublishedType=initial)*
 
+**See the streamlit version here:** *[Link](https://facialkeypointdetection-3ktroyrkokkmjyirbllqgx.streamlit.app/)*
 
 ## 📁 Project Structure
 
